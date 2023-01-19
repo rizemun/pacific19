@@ -1,23 +1,23 @@
 @font-face {
   font-family: "GT Alphina";
-  src: url("/fonts/GT Alphina/GT-Alpina-Fine-Condensed-Thin-Italic-Trial.woff2") format("woff2"),
-  url("/fonts/GT Alphina/GT-Alpina-Fine-Condensed-Thin-Italic-Trial.otf") format("otf");
+  src: url("./fonts/GT Alphina/GT-Alpina-Fine-Condensed-Thin-Italic-Trial.woff2") format("woff2"),
+  url("./fonts/GT Alphina/GT-Alpina-Fine-Condensed-Thin-Italic-Trial.otf") format("otf");
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: "GT Alphina";
-  src: url("/fonts/GT Alphina/GT-Alpina-Fine-Condensed-Thin-Trial.woff2") format("woff2"),
-  url("/fonts/GT Alphina/GT-Alpina-Fine-Condensed-Thin-Trial.otf") format("otf");
+  src: url("./fonts/GT Alphina/GT-Alpina-Fine-Condensed-Thin-Trial.woff2") format("woff2"),
+  url("./fonts/GT Alphina/GT-Alpina-Fine-Condensed-Thin-Trial.otf") format("otf");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Sequel Sans";
-  src: url("/fonts/Sequel Sans/Sequel Sans Medium Body.otf") format("otf"),
-  url("/fonts/Sequel Sans/Sequel Sans Medium Body.ttf") format("truetype");
+  src: url("./fonts/Sequel Sans/Sequel Sans Medium Body.otf") format("otf"),
+  url("./fonts/Sequel Sans/Sequel Sans Medium Body.ttf") format("truetype");
 }
 
 @mixin mediaDesktopTill1300 {
