@@ -31,6 +31,8 @@ body {
   padding: 0;
   background-color: var(--color-olive, red);
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 ._italic {
@@ -49,6 +51,12 @@ body {
     grid-template-areas: "first third" "second third" ". third";
     max-width: 1440px;
     margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1300px) {
+  .desktop-grid {
+    padding-bottom: 30px;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -94,7 +102,10 @@ body {
   .logo-wrap {
     padding-top: 71px;
     justify-content: space-between;
-    padding-left: 256px;
+    padding-left: min(-50px + 21.25%, 256px);
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 
@@ -111,6 +122,12 @@ body {
   .heading {
     font-size: 55px;
     line-height: 60px;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1300px) {
+  .heading {
+    font-size: 34px;
+    line-height: 40px;
   }
 }
 .heading_top {
@@ -130,7 +147,7 @@ body {
 @media only screen and (min-width: 1025px) and (max-width: 1300px) {
   .heading_top {
     width: 20%;
-    transform: translate(232px, 95px);
+    transform: translate(232px, 375px);
   }
 }
 .heading_bottom {
@@ -295,8 +312,9 @@ body {
   font-size: 32px;
   line-height: 36px;
   color: #F5F5F3;
-  padding-inline: 32px;
+  padding-inline: 8.6%;
   letter-spacing: 0.2px;
+  max-width: 500px;
 }
 @media only screen and (min-width: 1025px) {
   .dreaming-block__content {
@@ -304,6 +322,7 @@ body {
     left: 51.7%;
     transform: translateX(-50%);
     padding: 0;
+    max-width: none;
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -369,6 +388,7 @@ body {
     padding-inline: 0;
     max-width: 1440px;
     margin: -6px auto 0;
+    width: 100%;
   }
 }
 .step-up-to-date__column_image-wrap {
@@ -458,6 +478,10 @@ body {
 }
 .submit-form__submit:hover {
   background-color: var(--color-olive);
+}
+
+.pre-footer {
+  flex-grow: 1;
 }
 
 .footer {
